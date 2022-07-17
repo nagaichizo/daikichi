@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP', sans-serif, "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8eab0;
+    padding-bottom: 20px;
+}
+
+/*
+header
+*/
+
+
+.header{
+    margin: 0;
+    background-color: #f1d052;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-navlist{
+    display: flex;
+    margin: 0 auto;
+    width: 850px;
+}
+.header-navitem{
+    padding-left: 10px;
+    padding-right: 5px;
+    border-right: 2px solid #333;
+    margin: 5px 0;
+}
+.header-navitem >a{
+    text-decoration: none;
+    color: #333;
+}
+
+.page-Wrapper{
+    width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 768px){
+
+    .page-Wrapper{
+        width: 100%;
+    }
+}
+.page-title{
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1.0), #fbf2cf);
+    margin: 0;
+    text-align: center;
+}
+.contain{
+    margin: 0 10px;
+}
+.contact-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.contact-description{
+    color: #2f5f98; 
+}
+.contact-description >h2{
+    margin-bottom: 5px;
+}
+.contact-description >p{
+    margin: 0px;
+}
+.contact-number{
+    text-align: center;
+}
+.tel-link{
+    display: flex;
+    background-color: #ec3624;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.tel-link >img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+}
+.tel-link >p{
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.open-ul{
+    display: flex;
+    list-style: none;
+    padding: 0%;
+}
+.opentime-left{
+    width: 50%;
+}
+h3{
+    width: 80%;
+    margin: 10px auto;
+}
+.calendar-table{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #333;
+}
+.calendar-table th{
+    padding: 5px;
+    margin: 3px;
+}
+.calendar-table td{
+    padding: 5px;
+    margin: 3px;
+}
+.sunday{
+    color: red;
+}
+.saturday{
+    color: blue;
+}
+.monday{
+    background-color: #f13f79;
+}
+.closeday{
+    display: block;
+    width: 80%;
+    text-align: left;
+    margin: 10px auto;
+}
+.closeday p{
+    background-color: #f13f79;
+    width: 50px;
+}
+.open-description{
+    width: 50%;
+}
+
+.opentime-table{
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #333;
+}
+.opentime-table-header{
+    background-color:  #fbf2cf;
+}
+.opentime-table th{
+    border: 1px solid #333;
+    width: 50%;
+}
+.opentime-table td{
+    border: 1px solid #333;
+}
+
+/*
+footer
+*/
+.footer{
+    background-color: #fbf2cf;
+}
+.sns{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /*display flexがついているときはtextallignやmargin0autoは効かない*/
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.sns-button{
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    margin: 5px 10px;
+}
+.twitter-button{
+    background-color: #55acee;;
+}
+.instagram-button{
+    background-color: #f13f79;
+
+}
+.sns-button > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    overflow: hidden;
+    z-index: 10;
+    color: #fff;
+}
+.footer-contact{
+    text-align: center;
+}
+.footer-contact >a{
+    text-decoration: none;
+    color: #333;
+}
+.footer-contact >a >p{
+    margin: 0;
+}
+.footer-tel >p{
+    margin: 0;
+}
